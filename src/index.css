@@ -1,0 +1,204 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html {
+  font-size: 62.5%; /*default size is 16px*/
+  box-sizing: border-box; /*for easily adding borders*/
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: "roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#root {
+  height: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  background-color: #404040;
+}
+
+main {
+  grid-area: main;
+  padding: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  font-family: "roboto";
+  background-color: #404040;
+  color: #ffff;
+}
+
+/*COMMON CLASSES*/
+
+h1 {
+  font-size: 2rem;
+  padding: 1rem 0rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  padding: 1rem 0rem;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #c5aa6a;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+li {
+  margin-top: 1rem;
+}
+.badge {
+  background-color: #f02020;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.8rem;
+  margin-left: 0.2rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+.row.top {
+  align-items: flex-start;
+}
+.col-1 {
+  flex: 1 1 25rem;
+}
+.col-2 {
+  flex: 2 1 30rem;
+}
+.min-30 {
+  min-width: 30rem;
+}
+input,
+select,
+textarea,
+button {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.6rem;
+  font-family: "roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+button {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+button.primary {
+  background-color: #f9c040;
+  font-size: 2rem;
+  font-family: "roboto";
+}
+input:hover,
+select:hover,
+textarea:hover,
+button.primary:hover {
+  border: 0.1rem #404040 solid;
+}
+button.block {
+  width: 100%;
+}
+
+/*HEADER*/
+
+header a {
+  color: white;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+a.brand {
+  font-family: "roboto";
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/*MAIN*/
+
+.imgsize {
+  height: 250px;
+  width: 250px;
+}
+.small {
+  max-width: 6rem;
+  width: 100%;
+}
+.card {
+  border: 0.1rem solid #c0c0c0;
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card-body {
+  padding: 1rem;
+  padding-top: 0.2rem;
+}
+
+.card-body > * {
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 2rem;
+}
+
+.rating span {
+  margin: 0.1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.rating span :last-child {
+  color: #ebc64d;
+  font-size: 2rem;
+}
+
+/*Alert*/
+.success {
+  color: #20a020;
+}
+.error {
+  color: #a02020;
+}
+
+.center-content1 {
+  font-size: 30px;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  margin: -25px 0 0 -25px;
+}
